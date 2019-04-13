@@ -1,1 +1,13 @@
-h1 customers works!
+h1 Clientes
+table.table
+  tr
+    th Id
+    th Nome
+    th Idade
+    th Cidade
+
+  tr(*ngFor="let customer of customers")
+    td {{customer.id}}
+    td {{customer.name}}
+    td {{customer.age}}
+    td {{customer.city}}

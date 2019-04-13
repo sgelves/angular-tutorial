@@ -14,6 +14,6 @@ export class DumbApiService {
   constructor(private http: HttpClient) { }
 
   getClientList () {
-    return this.http.get('https://private-92a969-processoseletivo1.apiary-mock.com/customers');
+    return this.http.get<Object[]>('https://private-92a969-processoseletivo1.apiary-mock.com/customers');
   }
 }
