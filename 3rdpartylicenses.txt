@@ -91,9 +91,6 @@ ngx-bootstrap/datepicker
 
 ngx-bootstrap/utils
 
-ngx-hotjar
-MIT
-
 pug-runtime
 MIT
 Copyright (c) 2014 Forbes Lindesay
