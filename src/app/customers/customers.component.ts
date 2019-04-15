@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { setTheme } from 'ngx-bootstrap/utils';
 import { DumbApiService } from '../dumb-api.service';
-import { NgxHotjarService } from 'ngx-hotjar';
+
 @Component({
   selector: 'app-customers',
   templateUrl: './customers.component.pug',
@@ -11,12 +11,11 @@ export class CustomersComponent implements OnInit {
 
   customers = [];
 
-  constructor(private dumbApiService: DumbApiService, protected $hotjar: NgxHotjarService) {
+  constructor(private dumbApiService: DumbApiService) {
     setTheme('bs3');
   }
 
   ngOnInit() {
-    this.$hotjar.virtualPageView('/virtual/component/started');
     this.queryCustomer();
   }
 
